@@ -2,7 +2,7 @@ site_name: Team Documentation
 site_description: Documentation for our awesome team
 site_author: Your Name
 theme:
- name: readthedocs
+ name: material
 
 extra_css:
  - css/main.css
@@ -12,4 +12,3 @@ nav:
  - About: about.md
  - Guidelines: guidelines.md
 
- 
