@@ -1,6 +1,12 @@
-# Welcome to Team Documentation
-This site contains guidelines, processes, and resources for our team.
-## Quick Links
-- [Team Guidelines](guidelines.md)
-- [About Our Team](about.md)
+# Gruppe 1
+Kasper Nielsen, Kristoffer Madsen & Signe Wehlast
+
+## Links
+- [API](api.md)
+- [End to End testing](e2etest.md)
+- [Versionsstyring](github.md)
+- [Statisk kode analyse](staiccodeanalysis.md)
+- [Unitest](unitest.md)
+
+
 

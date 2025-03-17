@@ -1,0 +1,1 @@
+Til versionsstyring af dette projekt er GitHub anvendt.
