@@ -1,4 +1,4 @@
-site_name: DBI Egenkontrol - GitHub Pages
+site_name: Udviklingsmiljøer - GitHub Pages
 site_description: Documentation for our awesome team
 site_author: Your Name
 theme:
@@ -9,7 +9,6 @@ extra_css:
 
 nav:
  - Forside: index.md
- - API: api.md
  - End to End testing: e2etest.md
  - Versionsstyring: github.md
  - Statisk kode analyse: staticcodeanalysis.md
