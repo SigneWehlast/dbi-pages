@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#eslint" class="md-skip">
+        <a href="#statisk-kode-analyse" class="md-skip">
           Skip to content
         </a>
       
@@ -297,6 +297,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Statisk kode analyse
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -308,6 +321,34 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#eslint-og-refaktorering" class="md-nav__link">
+    <span class="md-ellipsis">
+      ESLint og refaktorering
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -355,6 +396,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#eslint-og-refaktorering" class="md-nav__link">
+    <span class="md-ellipsis">
+      ESLint og refaktorering
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -369,7 +427,43 @@
 
 
 
-<h1 id="eslint">ESLint</h1>
+<h1 id="statisk-kode-analyse">Statisk kode analyse</h1>
+<h2 id="eslint-og-refaktorering">ESLint og refaktorering</h2>
+<p>Til at lave statisk kode analyse er der anvendt ESLint og linting regler.</p>
+<p><img alt="Linting regler" src="../img/ESLintregler.png" /></p>
+<p>Der er lavet reglerne:</p>
+<ul>
+<li>
+<p>Ingen comma-dangle (ingen komma uden efterfølgende punkter).</p>
+</li>
+<li>
+<p>Der skal altid bruges === eller !== (både navn, type og værdi skal være den samme i sammenligninger).</p>
+</li>
+<li>
+<p>Der skal bruges 2 mellemrum til indrykning.</p>
+</li>
+<li>
+<p>Ingen brug af eval.</p>
+</li>
+<li>
+<p>Ingen mellemrum efte semikolon.</p>
+</li>
+<li>
+<p>Ingen ubrugte variabler.</p>
+</li>
+<li>
+<p>Ingen brug af variabeltypen 'var'.</p>
+</li>
+<li>
+<p>Brug altid const, hvis variblen ikke ændrer sig.</p>
+</li>
+<li>
+<p>Altid bruge singlequotes.</p>
+</li>
+<li>
+<p>Altid bruge semikolon.</p>
+</li>
+</ul>
 
 
 
