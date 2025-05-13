@@ -7,11 +7,15 @@ Til at lave statisk kode analyse er der anvendt ESLint og linting regler.
 
 Der er lavet reglerne:
 
+- Den første curly-bracket skal stå på samme linje for koden, mens den sidste skal stå på egen linje.
+
 - Ingen comma-dangle (ingen komma uden efterfølgende punkter).
 
 - Der skal bruges 2 mellemrum til indrykning.
 
 - Ingen brug af eval.
+
+- Der må maks være to tomme linjer efter hinanden og ingen tomme linjer i slutningen af en fil.
 
 - Ingen mellemrum efter semikolon.
 
