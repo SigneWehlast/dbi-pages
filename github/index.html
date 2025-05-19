@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.13">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
@@ -66,6 +66,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#github-og-branching" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -246,6 +251,19 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Versionsstyring
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -257,6 +275,41 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#github-og-branching" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub og branching
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub actions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -324,6 +377,32 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#github-og-branching" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub og branching
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub actions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -340,7 +419,27 @@
 
   <h1>Versionsstyring</h1>
 
+<h2 id="github-og-branching">GitHub og branching</h2>
 <p>Til versionsstyring af dette projekt er GitHub anvendt.</p>
+<p>Platformen GitHub gør det muligt at arbejde flere omkring et projekt. Der oprettes et repository, hvori koden deles ved brug af commits og push-requests. Dermed er der en versionsstyring, hvori der hele tiden kan gås tilbage til tidligere versioner af koden.</p>
+<p>Når der lægges ændringer op på GitHub, så skrives der også en beskrivelse af, hvad der ændret. Et eksempel på dette:</p>
+<hr />
+<p><img alt="Commit eksempel" src="../img/commit.png" /></p>
+<hr />
+<p><img alt="Commit eksempel" src="../img/commit1.png" /></p>
+<hr />
+<p>Der er gjort brug af branches, ved brug af strategien feature branching. Der er lavet features og sider i de forskellige branches, og når disse er færdige, lægges de op på main-branch. </p>
+<p>Her er et eksempel på starten af vores branching, hvor der først er oprettet et projekt og derefter er lavet features:</p>
+<p><img alt="Branching eksempel" src="../img/branching.png" /></p>
+<hr />
+<h2 id="github-actions">GitHub actions</h2>
+<p>Der er brugt GitHub actions til automatisk at bygge og deploye denne MkDocs side til GitHub Pages.
+GitHub actions kører igennem en yaml-fil, som her er 'deploy-docs.yml'.</p>
+<p><img alt="GitHub action" src="../img/actions.png" /></p>
+<p>Det kan ses på linje 2-8, at dette workflow kører, når der enten pushes til main eller laves et pull request.
+Derudover fortæller filen, at der opsættes og installeres python.
+På linje 27-31 er der, hvor den deployer ændringerne til GitHub Pages, hvor den så finder det brugernavn og e-mail på den, der startede workflowet.</p>
+<p>Dermed kører denne GitHub action, når der pushes ændringer, hvortil det buildes og deployes op til GitHub Pages siden.</p>
 
 
 
