@@ -34,6 +34,15 @@ GitHub actions kører igennem en yaml-fil, som her er 'deploy-docs.yml'.
 
 Det kan ses på linje 2-8, at dette workflow kører, når der enten pushes til main eller laves et pull request.
 Derudover fortæller filen, at der opsættes og installeres python.
-På linje 27-31 er der, hvor den deployer ændringerne til GitHub Pages, hvor den så finder det brugernavn og e-mail på den, der startede workflowet.
+
+På linje 27-31 er der, hvor den deployer ændringerne til GitHub Pages, hvor den så finder det brugernavn og e-mail på den, der startede workflowet. Derefter pushes det til branchen gh-pages, som er den branch, der hører sammen med GitHub Page-siden.
+
+Det kan ses her, at ændringerne lægges op på main, mens det også bliver builded og deployet til branchen, gh-pages:
+
+---------------
+
+![GitHub action deploy](img/workflow.png)
+
+---------------
 
 Dermed kører denne GitHub action, når der pushes ændringer, hvortil det buildes og deployes op til GitHub Pages siden.
