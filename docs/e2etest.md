@@ -6,7 +6,8 @@ Til den ene udførte end-to-end test er flowet, at en bruger logger ind, laver e
 
 Det der står ved beforeEach er det, der kører inden hver test.
 
-Her kan den kode, der kører ses. Her kan det blandt andet ses, at den skal logge ind med brugernavn og email, og derefter gå ind på skema siden og derefter oprette et skema.
+Her kan den kode, der kører ses. Her kan det blandt andet ses, at den skal logge ind med brugernavn og email, og derefter gå ind på skema siden og derefter oprette et skema med det mockdata, der står.
+
 
 ![end-to-end test](img/skema1.png)
 
@@ -19,7 +20,7 @@ Her kan det ses, at testen kører, hvortil den til slut vil melde fejl, hvis der
 
 I den anden test tester vi på, at der kan oprettes en bruger.
 
-Her kan det ses, at den går ind på login siden, og derefter hen på opret bruger. Derefter opretter den en bruger med de værdier, der er givet. Derefter opretter den brugeren.
+Her kan det ses, at den går ind på login siden, og derefter hen på opret bruger. Derefter opretter den en bruger med den mockdata, der er angivet. Derefter opretter den brugeren.
 
 ![end-to-end test](img/user1.png)
 
